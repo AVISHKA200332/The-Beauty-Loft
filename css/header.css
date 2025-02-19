@@ -1,0 +1,47 @@
+
+.menu-bar {
+    background-color: none;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  .menu-bar ul li {
+    padding: 10px 30px;
+  }
+  .menu-bar ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+  }
+  .menu-bar ul li a:hover {
+    color: var(--color-primary); 
+  }
+  .dropdown-menu {
+    display: none;
+  }
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+   
+    top: 100%;
+    background-color: black;
+  }
+
+  .menu-bar ul li:hover .dropdown-menu ul{
+    display: block;
+    margin: 10px;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+
